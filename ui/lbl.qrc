@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/lbl_image" >
+        <file>lbl.jpg</file>
+    </qresource>
+    <qresource prefix="/translations" >
+        <file>../russian.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,204 @@
+<ui version="4.0" >
+ <class>dFirst</class>
+ <widget class="QDialog" name="dFirst" >
+  <property name="windowModality" >
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>214</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>400</width>
+    <height>214</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>400</width>
+    <height>214</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy" >
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle" >
+   <string>KNO - Join In Game</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="lbl.qrc" >:/lbl_image/lbl.jpg</iconset>
+  </property>
+  <property name="layoutDirection" >
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>false</bool>
+  </property>
+  <property name="modal" >
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="layoutWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>2</x>
+     <y>2</y>
+     <width>391</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" >
+    <item>
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QLabel" name="label" >
+        <property name="text" >
+         <string>Nick</string>
+        </property>
+        <property name="buddy" >
+         <cstring>nickEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="nickEdit" >
+        <property name="inputMask" >
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QLabel" name="label_2" >
+        <property name="text" >
+         <string>Who am i?</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" >
+        <item>
+         <widget class="QRadioButton" name="serverButton" >
+          <property name="text" >
+           <string>Server</string>
+          </property>
+          <property name="checked" >
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="clientButton" >
+          <property name="text" >
+           <string>Client</string>
+          </property>
+          <property name="checked" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QLabel" name="label_3" >
+        <property name="text" >
+         <string>Server</string>
+        </property>
+        <property name="buddy" >
+         <cstring>ipEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ipEdit" >
+        <property name="autoFillBackground" >
+         <bool>false</bool>
+        </property>
+        <property name="inputMask" >
+         <string>000.000.000.000; </string>
+        </property>
+        <property name="text" >
+         <string>127.000.000.001</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4" >
+        <property name="text" >
+         <string>Port</string>
+        </property>
+        <property name="buddy" >
+         <cstring>ipEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="portEdit" >
+        <property name="autoFillBackground" >
+         <bool>false</bool>
+        </property>
+        <property name="inputMask" >
+         <string>00000; </string>
+        </property>
+        <property name="text" >
+         <string>50000</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" >
+      <item>
+       <widget class="QPushButton" name="joinButton" >
+        <property name="text" >
+         <string>Join</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="knoAbout" >
+        <property name="text" >
+         <string>About KNO</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>nickEdit</tabstop>
+  <tabstop>serverButton</tabstop>
+  <tabstop>clientButton</tabstop>
+  <tabstop>ipEdit</tabstop>
+  <tabstop>portEdit</tabstop>
+  <tabstop>joinButton</tabstop>
+  <tabstop>knoAbout</tabstop>
+ </tabstops>
+ <resources>
+  <include location="lbl.qrc" />
+ </resources>
+ <connections/>
+</ui>
